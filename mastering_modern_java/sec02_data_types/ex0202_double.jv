@@ -1,0 +1,48 @@
+#!/usr/bin/java --source 17
+
+/* #############################################################################
+ * @Filename        : ex0202_double.jv
+ * @Created         : Sun 2026-02-22 13:07:06-0500
+ * @Modified        :
+ * @Args            : 
+ * @Author          : David L. Montigny
+ * @Email           : dmontigny27@gmail.com
+ * @Usage           : java ex0202_double.jv
+ * @Description     : 
+ * ###########################################################################*/
+
+/* ============================= include files ===============================*/
+
+
+/* ================================ macros ===================================*/
+
+
+/* ============================ global variables =============================*/
+
+
+/* =============================== prototypes ================================*/
+
+
+/* ===========================================================================*/
+
+/*
+ * Write a Java code that declares a double variable with the name piValue and
+ *  assign a value 3.14 to it.
+ * Once the assignment of the value is completed, print the value inside the
+ *  variable using the System.out.println() statement.
+ */
+
+public class Exercise0 {
+  public static void main(String[] args) {
+    System.out.println("\nProgram starting\n");  
+
+    double piValue = 3.14;
+
+    System.out.println(piValue);
+
+    System.out.println("\nProgram ending\n");  
+    System.exit(0);
+  }
+} // main
+
+
