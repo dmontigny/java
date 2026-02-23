@@ -1,11 +1,11 @@
 /* #############################################################################
- * @Filename        : ex0101_hello.jv
- * @Created         : Sun 2026-02-22 08:18:25-0500
+ * @Filename        : HelloWorld.java
+ * @Created         : Mon 2026-02-23 07:13:29-0500
  * @Modified        :
  * @Args            : 
  * @Author          : David L. Montigny
  * @Email           : dmontigny27@gmail.com
- * @Usage           : java ex0101_hello.jv
+ * @Usage           : javac HelloWorld.java
  * @Description     : 
  * ###########################################################################*/
 
@@ -23,11 +23,11 @@
 
 /* ===========================================================================*/
 
-public class ex0101_hello{
+public class HelloWorld {
   public static void main(String[] args) {
     System.out.println("\nProgram starting\n");  
 
-    System.out.println("Hello, Java");
+    System.out.println("Hello, world!"); 
 
     System.out.println("\nProgram ending\n");  
     System.exit(0);
