@@ -1,0 +1,53 @@
+#!/usr/bin/java --source 17
+
+/* #############################################################################
+ * @Filename        : ex0206_underscores.jv
+ * @Created         : Sun 2026-02-22 19:13:42-0500
+ * @Modified        :
+ * @Args            : 
+ * @Author          : David L. Montigny
+ * @Email           : dmontigny27@gmail.com
+ * @Usage           : java ex0206_underscores.jv
+ * @Description     : Write a Java code that create a float variable by
+ *                      following the below instructions:
+ *                      declares a float variable with the name piValue
+ *                      assign the value 3.1415927 to the piValue variable
+ *                      use underscores in between the numeric values
+ *                      print the value inside the variable piValue using the
+ *                        System.out.println() statement
+ *
+ *                      Expected Output:
+ *                        3.1415927
+
+ * ###########################################################################*/
+
+/* ============================= include files ===============================*/
+
+
+/* ================================ macros ===================================*/
+
+
+/* ============================ global variables =============================*/
+
+
+/* =============================== prototypes ================================*/
+
+
+/* ===========================================================================*/
+
+public class CLASS {
+  public static void main(String[] args) {
+    System.out.println("\nProgram starting\n");  
+
+    float piValue;
+
+    piValue = 3.141_592_7F;
+
+    System.out.println(piValue);
+
+    System.out.println("\nProgram ending\n");  
+    System.exit(0);
+  }
+} // main
+
+

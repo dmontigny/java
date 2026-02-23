@@ -1,0 +1,48 @@
+#!/usr/bin/java --source 17
+
+/* #############################################################################
+ * @Filename        : ex0203_boolean.jv
+ * @Created         : Sun 2026-02-22 13:33:51-0500
+ * @Modified        :
+ * @Args            : 
+ * @Author          : David L. Montigny
+ * @Email           : dmontigny27@gmail.com
+ * @Usage           : java ex0203_boolean.jv
+ * @Description     : Write a Java code that declares a first boolean variable
+ *                      with the name believesInAliens and assign a value false
+ *                      to it. Followed by second boolean variable with the name
+ *                      needsMoreCoffee and assign a value true.
+ *                    Once the assignment of the value is completed, print the
+ *                      value inside the variables using the
+ *                      System.out.println() statement.
+ * ###########################################################################*/
+
+/* ============================= include files ===============================*/
+
+
+/* ================================ macros ===================================*/
+
+
+/* ============================ global variables =============================*/
+
+
+/* =============================== prototypes ================================*/
+
+
+/* ===========================================================================*/
+
+public class Exercise {
+  public static void main(String[] args) {
+    System.out.println("\nProgram starting\n");  
+
+    boolean believesInAliens = false, needsMoreCoffee = true;
+
+    System.out.println(believesInAliens);
+    System.out.println(needsMoreCoffee);
+
+    System.out.println("\nProgram ending\n");  
+    System.exit(0);
+  }
+} // main
+
+

@@ -1,0 +1,48 @@
+#!/usr/bin/java --source 17
+
+/* #############################################################################
+ * @Filename        : ex0205_overflow.jv
+ * @Created         : Sun 2026-02-22 18:25:56-0500
+ * @Modified        :
+ * @Args            : 
+ * @Author          : David L. Montigny
+ * @Email           : dmontigny27@gmail.com
+ * @Usage           : java ex0205_overflow.jv
+ * @Description     : Write a Java code that results in int overflow by
+ *                      following the below instructions
+ *                        declares a int variable with the name overflowNum
+ *                        assign the value to the overflowNum which is a sum of
+ *                          int max value and 1
+ *                        print the value inside the variable overflowNum using
+ *                          the System.out.println() statement
+ * ###########################################################################*/
+
+/* ============================= include files ===============================*/
+
+
+/* ================================ macros ===================================*/
+
+
+/* ============================ global variables =============================*/
+
+
+/* =============================== prototypes ================================*/
+
+
+/* ===========================================================================*/
+
+public class CLASS {
+  public static void main(String[] args) {
+    System.out.println("\nProgram starting\n");  
+
+    int overflowNum;
+
+    overflowNum = Integer.MAX_VALUE + 1;
+    System.out.println(overflowNum);
+
+    System.out.println("\nProgram ending\n");  
+    System.exit(0);
+  }
+} // main
+
+
