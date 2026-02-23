@@ -9,8 +9,10 @@
 # Editor-based HTTP Client requests
 /httpRequests/
 
+# IntelliJ
 /java.iml
 /misc.xml
 /modules.xml
 /vcs.xml
+*.swp
 
