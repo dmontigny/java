@@ -1,1 +1,54 @@
-/home/dmontyrhh/projects/misc_courses/.gitignore
+
+# Project exclude paths
+*.bak
+*.swp
+*.log
+/.idea/
+.idea/codeStyles/codeStyleConfig.xml
+
+*.o
+out/
+/obj/
+*.rpm
+.~lock*
+
+# JetBrains
+.idea/
+/.idea
+vcs.xml
+misc.xml
+
+# environments
+venv/
+pyenv/
+/venv/
+/pyenv/
+
+# NetBeans specific #
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+nbactions.xml
+nb-configuration.xml
+
+# nbproject/
+private/
+**/.dep.inc
+
+# Vagrant
+.vagrant/
+
+/c++/data_structures/ch02_classes_ADTs/ex07_note/dist/
+data_structures_problem_solving_c++.pdf
+.Rproj.user
+.RData
+.RHistory
+/netbeans_def_temp
+
+infiles/
+outfiles/
+/outfiles/
+files/
+
