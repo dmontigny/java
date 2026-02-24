@@ -6,7 +6,7 @@ out/
 .idea
 /.idea/
 *.iml
-codeStyleConfig.xml
+/codeStyleConfig.xml
 
 ### Eclipse ###
 .apt_generated
