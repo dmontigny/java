@@ -29,7 +29,9 @@ public interface Person {
     System.out.println("Hello from Interfaces");
   }
 
-
+  default void walk() {
+    System.out.println("Walking");
+  } // walk
 } // Person
 
 

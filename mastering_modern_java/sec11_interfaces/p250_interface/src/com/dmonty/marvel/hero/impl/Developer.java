@@ -1,11 +1,11 @@
 /* #############################################################################
- * @Filename        : IronMan.java
- * @Created         : Mon 2026-03-02 20:47:07-0500
+ * @Filename        : Developer.java
+ * @Created         : Tue 2026-03-03 07:07:50-0500
  * @Modified        :
  * @Args            : 
  * @Author          : David L. Montigny
  * @Email           : dmontigny27@gmail.com
- * @Usage           : javac IronMan.java
+ * @Usage           : javac Developer.java
  * @Description     : 
  * ###########################################################################*/
 
@@ -24,29 +24,11 @@
 /* ===========================================================================*/
 package com.dmonty.marvel.hero.impl;
 
-import com.dmonty.marvel.hero.SuperHero;
+import com.dmonty.marvel.hero.Person;
 
-public class IronMan implements SuperHero {
-  @Override
-  public String usePower() {
-    System.out.println(UNIVERSE_NAME);
-    return "IronMan using his power.";
-  } // usePower
+public class Developer extends Employee implements Person {
 
-  /**
-   * @param:
-   *  if y: kill the villain
-   *   if n: stop the villain
-   * @return: status
-   */
-  @Override
-  public String stopVillain(char c) {
-    if( c == 'y') {
-      return "IronMan killed the villain.";
-    } else {
-      return "IronMan stopped the villain.";
-    }
-  } // stopVillain
-} // IronMan
+
+} // Developer
 
 

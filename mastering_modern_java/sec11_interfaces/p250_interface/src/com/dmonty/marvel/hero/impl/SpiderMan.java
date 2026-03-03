@@ -1,11 +1,11 @@
 /* #############################################################################
- * @Filename        : CaptainAmerica.java
- * @Created         : Mon 2026-03-02 21:03:36-0500
+ * @Filename        : SpiderMan.java
+ * @Created         : Mon 2026-03-02 21:01:05-0500
  * @Modified        :
  * @Args            : 
  * @Author          : David L. Montigny
  * @Email           : dmontigny27@gmail.com
- * @Usage           : javac CaptainAmerica.java
+ * @Usage           : javac SpiderMan.java
  * @Description     : 
  * ###########################################################################*/
 
@@ -24,12 +24,12 @@
 /* ===========================================================================*/
 package com.dmonty.marvel.hero.impl;
 
-import com.dmonty.marvel.her.SuperHero;
+import com.dmonty.marvel.hero.SuperHero;
 
-public class CaptainAmerica implements SuperHero {
+public class SpiderMan implements SuperHero {
   @Override
   public String usePower() {
-    return "CaptainAmerica using his power.";
+    return "SpiderMan using his power.";
   } // usePower
 
   /**
@@ -41,12 +41,11 @@ public class CaptainAmerica implements SuperHero {
   @Override
   public String stopVillain(char c) {
     if( c == 'y') {
-      return "CaptainAmerica killed the villain.";
+      return "SpiderMan killed the villain.";
     } else {
-      return "CaptainAmerica stopped the villain.";
+      return "SpiderMan stopped the villain.";
     }
   } // stopVillain
-} // CaptainAmerica
-
+} // SpiderMan
 
 

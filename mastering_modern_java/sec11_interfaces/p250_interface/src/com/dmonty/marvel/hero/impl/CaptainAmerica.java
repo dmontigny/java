@@ -1,11 +1,11 @@
 /* #############################################################################
- * @Filename        : SuperHero.java
- * @Created         : Mon 2026-03-02 20:36:58-0500
+ * @Filename        : CaptainAmerica.java
+ * @Created         : Mon 2026-03-02 21:03:36-0500
  * @Modified        :
  * @Args            : 
  * @Author          : David L. Montigny
  * @Email           : dmontigny27@gmail.com
- * @Usage           : javac SuperHero.java
+ * @Usage           : javac CaptainAmerica.java
  * @Description     : 
  * ###########################################################################*/
 
@@ -22,11 +22,15 @@
 
 
 /* ===========================================================================*/
-package com.dmonty.marvel.hero;
+package com.dmonty.marvel.hero.impl;
 
-public interface SuperHero extends Hero, Person {
-  String UNIVERSE_NAME = "Marvel";
-  String usePower();
+import com.dmonty.marvel.hero.SuperHero;
+
+public class CaptainAmerica implements SuperHero {
+  @Override
+  public String usePower() {
+    return "CaptainAmerica using his power.";
+  } // usePower
 
   /**
    * @param:
@@ -34,25 +38,15 @@ public interface SuperHero extends Hero, Person {
    *   if n: stop the villain
    * @return: status
    */
-  String stopVillain(char c);
-
-  default String trackLiveLocation() {
-    String liveLocation = "USA";
-
-    System.out.println("I am in " + liveLocation);
-
-    return liveLocation;
-  } // trackLiveLocation;
-
-  static String commonCharacteristics() {
-    return "Superhuman abilities. WIllingness to sacrafice.";
-  } // commonCharacteristics
-
   @Override
-  default void walk() {
-    Person.super.walk();
-  } // walk
+  public String stopVillain(char c) {
+    if( c == 'y') {
+      return "CaptainAmerica killed the villain.";
+    } else {
+      return "CaptainAmerica stopped the villain.";
+    }
+  } // stopVillain
+} // CaptainAmerica
 
-} // SuperHero
 
 

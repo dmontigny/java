@@ -1,11 +1,11 @@
 /* #############################################################################
- * @Filename        : IronMan.java
- * @Created         : Mon 2026-03-02 20:47:07-0500
+ * @Filename        : FunctionalInterface.java
+ * @Created         : Tue 2026-03-03 07:21:18-0500
  * @Modified        :
  * @Args            : 
  * @Author          : David L. Montigny
  * @Email           : dmontigny27@gmail.com
- * @Usage           : javac IronMan.java
+ * @Usage           : javac FunctionalInterface.java
  * @Description     : 
  * ###########################################################################*/
 
@@ -22,31 +22,12 @@
 
 
 /* ===========================================================================*/
-package com.dmonty.marvel.hero.impl;
+package com.dmonty.marvel.hero;
 
-import com.dmonty.marvel.hero.SuperHero;
-
-public class IronMan implements SuperHero {
-  @Override
-  public String usePower() {
-    System.out.println(UNIVERSE_NAME);
-    return "IronMan using his power.";
-  } // usePower
-
-  /**
-   * @param:
-   *  if y: kill the villain
-   *   if n: stop the villain
-   * @return: status
-   */
-  @Override
-  public String stopVillain(char c) {
-    if( c == 'y') {
-      return "IronMan killed the villain.";
-    } else {
-      return "IronMan stopped the villain.";
-    }
-  } // stopVillain
-} // IronMan
+@FunctionalInterface
+public interface FunctionalInterface {
+  void theMethod();
+} // FunctionalInterface
 
 
+     
