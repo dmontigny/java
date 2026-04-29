@@ -1,16 +1,17 @@
 /* #############################################################################
- * @Filename        : DivideThrow.java
- * @Created         : Sun 2026-03-22 15:11:22-0400
+ * @Filename        : AcceptAgeDetails.java
+ * @Created         : Mon 2026-03-23 09:07:50-0400
  * @Modified        :
  * @Args            : 
  * @Author          : David L. Montigny
  * @Email           : dmontigny27@gmail.com
- * @Usage           : javac DivideThrow.java
+ * @Usage           : javac AcceptAgeDetails.java
  * @Description     : 
  * ###########################################################################*/
 
 /* ============================== import files ===============================*/
 import java.util.Scanner;
+import com.dmonty.exception.custom.InvalidAgeException;
 
 /* ================================ macros ===================================*/
 
@@ -23,31 +24,24 @@ import java.util.Scanner;
 
 /* ===========================================================================*/
 
-public class DivideThrow {
-  public static void main(String[] args) {
+public class AcceptAgeDetails {
+  public static void main(String[] args) throws Exception {
     System.out.println("\nProgram starting\n");  
 
     Scanner scanner = new Scanner(System.in);
-    Division div = new Division();
-    double res;
-    String num1, num2;
+    int age;
 
-    System.out.print("Please enter the numerator value: ");
-    num1 = scanner.next();
-
-    System.out.print("Please enter the denominator value: ");
-    num2 = scanner.next();
-
-    if(num2.equals("0")) {
-      throw new ArithmeticException("Denominator is zero");
+    System.out.print("Enter your age: ");
+    age = scanner.nextInt();
+    if( age < 0 || age > 125) {
+      throw new InvalidAgeException("Invalid age. Please enter an age from 0 to 125.");
     }
-    res = div.divide(num1, num2);
-    System.out.println("Quotient: " + res);
- 
+
+    System.out.println("Your age is: " + age);
 
     System.out.println("\nProgram ending\n");  
     System.exit(0);
   } // main
-} // DivideThrow
+} // AcceptAgeDetails
 
 

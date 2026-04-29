@@ -1,15 +1,16 @@
 /* #############################################################################
- * @Filename        : Division.java
- * @Created         : Sun 2026-03-22 09:20:53-0400
+ * @Filename        : p320_custom_checked_exception_class.java
+ * @Created         : Wed 2026-04-29 14:30:46-0400
  * @Modified        :
  * @Args            : 
  * @Author          : David L. Montigny
  * @Email           : dmontigny27@gmail.com
+ * @Usage           : javac p320_custom_checked_exception_class.java
  * @Description     : 
  * ###########################################################################*/
 
 /* ============================== import files ===============================*/
-
+package com.dmonty.exception.custom;
 
 /* ================================ macros ===================================*/
 
@@ -22,16 +23,14 @@
 
 /* ===========================================================================*/
 
-public class Division {
-  public double divide(String numer, String denom)
-      throws NumberFormatException, ArithmeticException {
-    int n1 = Integer.parseInt(numer);
-    int n2 = Integer.parseInt(denom);
+public class p320_custom_checked_exception_class extends Exception {
+  public InvalidAgeException() {
+    super();
+  } // InvalidAgeException
 
-    System.out.println("Dividing...");
-
-    return n1 / n2;
-  }
-} // Division
+  public InvalidAgeException(String message) {
+    super(message);
+  } // InvalidAgeException
+} // p320_custom_checked_exception_class
 
 

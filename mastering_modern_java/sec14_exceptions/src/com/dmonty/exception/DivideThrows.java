@@ -1,16 +1,16 @@
 /* #############################################################################
- * @Filename        : DivideThrow.java
- * @Created         : Sun 2026-03-22 15:11:22-0400
+ * @Filename        : DivideThrows.java
+ * @Created         : Sun 2026-03-22 09:33:36-0400
  * @Modified        :
  * @Args            : 
  * @Author          : David L. Montigny
  * @Email           : dmontigny27@gmail.com
- * @Usage           : javac DivideThrow.java
+ * @Usage           : javac DivideThrows.java
  * @Description     : 
  * ###########################################################################*/
 
 /* ============================== import files ===============================*/
-import java.util.Scanner;
+
 
 /* ================================ macros ===================================*/
 
@@ -23,27 +23,19 @@ import java.util.Scanner;
 
 /* ===========================================================================*/
 
-public class DivideThrow {
+public class DivideThrows{
   public static void main(String[] args) {
     System.out.println("\nProgram starting\n");  
 
-    Scanner scanner = new Scanner(System.in);
     Division div = new Division();
     double res;
-    String num1, num2;
 
-    System.out.print("Please enter the numerator value: ");
-    num1 = scanner.next();
-
-    System.out.print("Please enter the denominator value: ");
-    num2 = scanner.next();
-
-    if(num2.equals("0")) {
-      throw new ArithmeticException("Denominator is zero");
+    try {
+      res = div.divide("5", "0");
+      System.out.println("Quotient: " + res);
+    } catch (NumberFormatException | ArithmeticException ex) {
+      System.out.println("Invalid data provided.");
     }
-    res = div.divide(num1, num2);
-    System.out.println("Quotient: " + res);
- 
 
     System.out.println("\nProgram ending\n");  
     System.exit(0);
