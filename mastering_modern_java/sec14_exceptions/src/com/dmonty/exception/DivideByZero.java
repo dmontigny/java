@@ -1,17 +1,18 @@
 /* #############################################################################
- * @Filename        : AcceptAgeDetails.java
- * @Created         : Mon 2026-03-23 09:07:50-0400
+ * @Filename        : DivideByZero.java
+ * @Created         : Wed 2026-04-29 16:12:44-0400
  * @Modified        :
  * @Args            : 
  * @Author          : David L. Montigny
  * @Email           : dmontigny27@gmail.com
- * @Usage           : javac AcceptAgeDetails.java
+ * @Usage           : javac DivideByZero.java
  * @Description     : 
  * ###########################################################################*/
 
 /* ============================== import files ===============================*/
 import java.util.Scanner;
-import com.dmonty.exception.custom.InvalidAgeException;
+
+import com.dmonty.exception.custom.DivideByZeroException;
 
 /* ================================ macros ===================================*/
 
@@ -24,24 +25,28 @@ import com.dmonty.exception.custom.InvalidAgeException;
 
 /* ===========================================================================*/
 
-public class AcceptAgeDetails {
-  public static void main(String[] args) throws Exception {
+public class DivideByZero {
+//  public static void main(String[] args) throws DivideByZeroException {
+  public static void main(String[] args) {
     System.out.println("\nProgram starting\n");  
 
     Scanner scanner = new Scanner(System.in);
-    int age;
 
-    System.out.print("Enter your age: ");
-    age = scanner.nextInt();
-    if( age < 0 || age > 125) {
-      throw new InvalidAgeException("Invalid age. Please enter an age from 0 to 125.");
+    System.out.print("Please enter a numerator value: ");
+    int numer = scanner.nextInt();
+
+    System.out.print("Please enter a denominator value: ");
+    int denom = scanner.nextInt();
+    if(denom == 0) {
+      throw new DivideByZeroException("Error: Denminator cannot equal zero.");
     }
 
-    System.out.println("Your age is: " + age);
+    int res = numer / denom;
+    System.out.println("The result is " + res);
 
     System.out.println("\nProgram ending\n");  
     System.exit(0);
   } // main
-} // AcceptAgeDetails
+} // DivideByZero
 
 
